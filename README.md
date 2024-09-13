@@ -1,3 +1,13 @@
+## My Website
+Creator: Walker Bove (WBot3000)
+
+A personal website I'm creating. I wanted to make something that describes myself while also having a unique style. Most of the "boxes" are supposed to look "futuristic", while the larger elements are yellow, as that's my favorite color.
+
+If you couldn't tell, I'm not a designer.
+
+This project uses Next.js. The Next.js default README is down below
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
