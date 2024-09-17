@@ -8,11 +8,12 @@ export type LinkInfo = {
 export type InfoBoxData = {
     name: string,
     description: string,
-    pictureSrc?: StaticImageData | null
+    stats?: Statistic[],
+    pictureSrc?: StaticImageData | null,
     pictureAlt?: string | null
 }
 
-export type LinkData = { //Just like InfoBoxData, but names are different
+export type LinkData = {
     label: string,
     link: string,
     iconSrc?: StaticImageData | null,

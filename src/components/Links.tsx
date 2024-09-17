@@ -26,7 +26,7 @@ export default function Links() {
                 <a href={data.link} key={data.label}>
                         <h2>{`${data.label}:`}</h2><p>{data.link}</p>
                     {data.iconSrc && 
-                        <Image className="w-fit h-fit" src={data.iconSrc} alt={data.iconAlt ?? "No alt provided. Please inform the website's owner."}/>}
+                        <Image className="" src={data.iconSrc} alt={data.iconAlt ?? "No alt provided. Please inform the website's owner."}/>}
                 </a>
             </div>
         })}

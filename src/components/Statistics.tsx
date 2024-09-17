@@ -1,7 +1,7 @@
 import { Statistic } from "@/definitions/types";
 
 export default function Statistics({ statistics }: {statistics: Statistic[]}) {
-    return <table>
+    return <table className="table-auto border-collapse border border-black">
         <tbody>
             {statistics.map(stat => <StatisticItem key={stat.label + stat.value} label={stat.label} value={stat.value}/>)}
         </tbody>
@@ -10,6 +10,6 @@ export default function Statistics({ statistics }: {statistics: Statistic[]}) {
 
 function StatisticItem({ label, value }: {label: string, value: string | number}) {
     return <tr>
-        <th>{label}</th><td>{value}</td>
+        <th scope="row" className="border border-black">{label}</th><td className="border border-black">{value}</td>
     </tr>
 }

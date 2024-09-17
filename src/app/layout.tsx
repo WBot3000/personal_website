@@ -23,7 +23,9 @@ export default function RootLayout({children,
         <html lang="en">
             <body className={roboto.className}>
                 <Navigation/>
-                {children}
+                <main className="flex min-h-screen flex-col items-center p-4 overflow-x-hidden">
+                    {children}
+                </main>
                 <Footer/>
             </body>
         </html>
