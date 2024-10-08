@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const MY_INTERESTS: InfoBoxData[] = [
     {
         name: "Wario Land/Ware",
-        description: "Out of all the Mario characters, Wario's my personal favorite. So the fact that he got not one, but two series of games was pretty epic. I'm personally a big fan of Wario Land 3. As for Warioware, I'm a big fan of Gold. A little bit of everything, it's quite nice.",
+        description: "Out of all the Mario characters, Wario's my personal favorite. So the fact that he got not one, but two series of games was pretty epic.",
         stats: [{
             label: "Favorite Character", value: "Wario"
         },
@@ -39,7 +39,10 @@ const MY_INTERESTS: InfoBoxData[] = [
             label: "Favorite Game", value: "Mega Man 5"
         },
         {
-            label: "Favorite Bosses", value: "Guts Man and Elec Man"
+            label: "Favorite Boss (#1)", value: "Guts Man"
+        },
+        {
+            label: "Favorite Boss (#2)", value: "Elec Man"
         }],
         pictureSrc: MegamanPicture,
         pictureAlt: "Mega Man and Proto Man alongside the Mega Man 10 Robot Masters."
