@@ -10,7 +10,7 @@ export default function CatInfo({ catInfo }: {catInfo: CatData}) {
 
     return <section className="flex flex-col p-8 justify-center">
         <h2 className="text-4xl">{catInfo.name}</h2>
-        <Image src={catInfo.pictures[pictureIdx ?? 0]} alt={`Picture of ${catInfo.name}.`} className="h-auto max-w-2xl mx-auto"/>
+        <Image src={catInfo.pictures[pictureIdx ?? 0]} alt={`Picture of ${catInfo.name}.`} className="h-auto max-w-2xl mx-auto mb-2"/>
         <Statistics statistics={[
                 {label: "Nickname", value: catInfo.nickname},
                 {label: "Friendliness", value: catInfo.friendliness},
@@ -19,7 +19,7 @@ export default function CatInfo({ catInfo }: {catInfo: CatData}) {
             ]}
         />
         <h3 className="text-2xl mt-4">Pictures</h3>
-        <div className="flex flex-row border-4 border-black">
+        <div className="flex flex-row flex-wrap justify-center border-4 border-black">
             {catInfo.pictures.map((val, idx) => {
                 return <Image key={val.toString()} 
                             src={val} alt={`Picture number ${idx+1} of ${catInfo.name}.`}

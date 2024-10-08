@@ -9,7 +9,7 @@ export default function Statistics({ statistics }: {statistics: Statistic[]}) {
 }
 
 function StatisticItem({ label, value }: {label: string, value: string | number}) {
-    return <tr>
+    return <tr className="max-w-fit">
         <th scope="row" className="border border-black">{label}</th><td className="border border-black">{value}</td>
     </tr>
 }

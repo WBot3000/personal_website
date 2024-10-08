@@ -4,24 +4,24 @@ import PageDescriptionBox from "@/components/PageDescriptionBox"
 import { CatData } from "@/definitions/types";
 
 import Mama1 from "#/cats/mama_1_fixed.png";
-import Mama2 from "#/cats/mama_1_fixed.png";
-import Mama3 from "#/cats/mama_1_fixed.png";
-import Mama4 from "#/cats/mama_1_fixed.png";
+import Mama2 from "#/cats/mama_2_fixed.png";
+import Mama3 from "#/cats/mama_3_fixed.png";
+import Mama4 from "#/cats/mama_4_fixed.png";
 
 import Tiggy1 from "#/cats/tiggy_1_fixed.png";
-import Tiggy2 from "#/cats/tiggy_1_fixed.png";
-import Tiggy3 from "#/cats/tiggy_1_fixed.png";
-import Tiggy4 from "#/cats/tiggy_1_fixed.png";
+import Tiggy2 from "#/cats/tiggy_2_fixed.png";
+import Tiggy3 from "#/cats/tiggy_3_fixed.png";
+import Tiggy4 from "#/cats/tiggy_4_fixed.png";
 
 import Delilah1 from "#/cats/delilah_1_fixed.png";
-import Delilah2 from "#/cats/delilah_1_fixed.png";
-import Delilah3 from "#/cats/delilah_1_fixed.png";
-import Delilah4 from "#/cats/delilah_1_fixed.png";
+import Delilah2 from "#/cats/delilah_2_fixed.png";
+import Delilah3 from "#/cats/delilah_3_fixed.png";
+import Delilah4 from "#/cats/delilah_4_fixed.png";
 
 import Mango1 from "#/cats/mango_1_fixed.png";
 import Mango2 from "#/cats/mango_2_fixed.png";
-import Mango3 from "#/cats/mango_1_fixed.png";
-import Mango4 from "#/cats/mango_2_fixed.png";
+import Mango3 from "#/cats/mango_3_fixed.png";
+import Mango4 from "#/cats/mango_4_fixed.png";
 import CatInfo from "@/components/CatInfo";
 
 
