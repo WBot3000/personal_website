@@ -1,19 +1,23 @@
 import type { Metadata } from "next"
 import PageDescriptionBox from "@/components/PageDescriptionBox"
 import PageTitle from "@/components/PageTitle"
+import PageSubtitle from "@/components/PageSubtitle"
 import InfoBoxList from "@/components/InfoBoxList"
 import { InfoBoxData } from "@/definitions/types"
 
 import WarioPicture from "#/wario.png"
 import MegamanPicture from "#/megaman.png"
+import DSTPicture from "#/dst.png"
 import SunnyPicture from "#/sunny.png"
+import FuturamaPicture from "#/futurama.png"
+
 
 export const metadata: Metadata = {
     title: "Interests",
     description: "A page containing the interests of WBot3000",
   };
 
-const MY_INTERESTS: InfoBoxData[] = [
+const MY_INTERESTS_GAMES: InfoBoxData[] = [
     {
         name: "Wario Land/Ware",
         description: "Out of all the Mario characters, Wario's my personal favorite. So the fact that he got not one, but two series of games was pretty epic.",
@@ -48,6 +52,27 @@ const MY_INTERESTS: InfoBoxData[] = [
         pictureAlt: "Mega Man and Proto Man alongside the Mega Man 10 Robot Masters."
     },
     {
+        name: "Don't Starve (Together)",
+        description: "I've played this game for over 100 hours, and I'm glad to report that I have yet to starve (in real life anyways, I've starved several times in the game). Has a pretty interesting style.",
+        stats: [{
+            label: "Favorite Character (#1)", value: "Wolfgang"
+        },
+        {
+            label: "Favorite Character (#2)", value: "WX-78"
+        },
+        {
+            label: "Favorite Season", value: "Winter"
+        },
+        {
+            label: "Favorite Food", value: "Meatballs"
+        }],
+        pictureSrc: DSTPicture,
+        pictureAlt: "Wilson and Willow, two characters from Don't Starve Together."
+    }
+]
+
+const MY_INTERESTS_TV: InfoBoxData[] = [
+    {
         name: "It's Always Sunny In Philadelphia",
         description: "The Gang Appears on a Website. Very funny show. Gotta love Danny DeVito. There's a bunch of good episodes, but here's two of them.",
         stats: [{
@@ -61,6 +86,21 @@ const MY_INTERESTS: InfoBoxData[] = [
         }],
         pictureSrc: SunnyPicture,
         pictureAlt: "Dennis, Mac, Charlie, Dee, and Frank all sitting together."
+    },
+    {
+        name: "Futurama",
+        description: "Started watching this show not too long ago. Enjoy the mixture of comedy and sci-fi stuff.",
+        stats: [{
+            label: "Favorite Character", value: "Bender Bending Rodriguez"
+        },
+        {
+            label: "Favorite Episode (#1)", value: "The Lesser of Two Evils"
+        },
+        {
+            label: "Favorite Episode (#2)", value: "Bender's Big Score"
+        }],
+        pictureSrc: FuturamaPicture,
+        pictureAlt: "Fry, Leela, and Bender in a promotional image."
     }
 ]
 
@@ -68,6 +108,11 @@ export default function InterestsPage() {
     return <>
         <PageTitle>Interests Page</PageTitle>
         <PageDescriptionBox>Here are some of the TV shows and video games I'm interested in.</PageDescriptionBox>
-        <InfoBoxList infoList={MY_INTERESTS}/>
+
+        <PageSubtitle>Games</PageSubtitle>
+        <InfoBoxList infoList={MY_INTERESTS_GAMES}/>
+
+        <PageSubtitle>TV Shows</PageSubtitle>
+        <InfoBoxList infoList={MY_INTERESTS_TV}/>
     </>
 }
