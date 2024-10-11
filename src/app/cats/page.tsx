@@ -74,5 +74,7 @@ export default function CatsPage() {
         <CatInfo catInfo={TIGGY_DATA}/>
         <CatInfo catInfo={DELILAH_DATA}/>
         <CatInfo catInfo={MANGO_DATA}/>
+
+        <p>Which cat is your favorite?</p>
     </>
 }

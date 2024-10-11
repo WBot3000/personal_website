@@ -114,5 +114,7 @@ export default function InterestsPage() {
 
         <PageSubtitle>TV Shows</PageSubtitle>
         <InfoBoxList infoList={MY_INTERESTS_TV}/>
+
+        <p>I have several more interests, though these are the ones I wanted to highlight.</p>
     </>
 }

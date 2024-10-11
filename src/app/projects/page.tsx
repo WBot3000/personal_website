@@ -31,5 +31,7 @@ export default function ProjectsPage() {
         <PageTitle>Projects Page</PageTitle>
         <PageDescriptionBox>Here are some projects I'm working/have worked on.</PageDescriptionBox>
         <InfoBoxList infoList={MY_PROJECTS}/>
+
+        <p>If you find these projects interesting, feel free to check out my Github and Gitlab accounts. The links to those are in the Links section. You'll find other projects that I haven't written about here, either because they're simple school assignments or they're still WIPs.</p>
     </>
 }

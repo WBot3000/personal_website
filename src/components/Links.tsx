@@ -1,8 +1,9 @@
 import { LinkData } from "@/definitions/types";
 import Image from "next/image";
 
-import GithubIcon from "#/github.svg";
-import GitlabIcon from "#/gitlab.svg";
+import GithubIcon from "#/link_logos/github.svg";
+import GitlabIcon from "#/link_logos/gitlab.svg";
+import CredlyIcon from "#/link_logos/credly.svg";
 
 const LINK_DATA: LinkData[] = [
     {
@@ -16,6 +17,12 @@ const LINK_DATA: LinkData[] = [
         link: "https://gitlab.com/WBot3000",
         iconSrc: GitlabIcon,
         iconAlt: "Gitlab Icon"
+    },
+    {
+        label: "Credly",
+        link: "https://www.credly.com/users/walker-bove",
+        iconSrc: CredlyIcon,
+        iconAlt: "Credly Icon"
     }
 ]
 

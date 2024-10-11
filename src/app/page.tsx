@@ -1,11 +1,25 @@
 import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
 
+import RobotGuy from "#/robot_guy.png"
+
 export default function Home() {
   return (
     <>
         <PageTitle>Welcome</PageTitle>
-        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+        <p>
+            Welcome to the personal website of Walker Bove. Here, you can learn some more stuff about me, such as my interests, projects I've been working on, and more.
+            This website is still a work in progress, so feel free to check in again to see if anything has changed.
+        </p>
+
+        <Image
+            className="m-8"
+            src={RobotGuy}
+            alt="A big, yellow robot character. Still needs a name."
+        />
+        <aside>This is a robot character I created. Dude still needs a name though.</aside>
+
+        {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
             Get started by editing&nbsp;
             <code className="font-mono font-bold">src/app/page.tsx</code>
@@ -109,7 +123,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
             </p>
         </a>
-        </div>
+        </div> */}
     </>
   );
 }
