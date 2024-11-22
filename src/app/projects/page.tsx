@@ -23,6 +23,12 @@ const MY_PROJECTS: InfoBoxData[] = [
         description: "The Sonic Robo-Blast 2 Kart (SRB2Kart for short) Purgatory Server is a joint effort between myself and a friend of mine. They (being the bigger fan of the game) decide on all of the content, while I (with the Linux server experience/comfort) handle all of the technical aspects. I decided to get a domain for the server (srb2kpurgatory.com), which actually directs you to a little website.",
         pictureSrc: null,
         pictureAlt: "An in-game picture of the server."
+    },
+    {
+        name: "Maximize Your Vocals",
+        description: "This is a Wordpress website I made for my friend's performance teaching service. He's a pretty talented guy. Visit the site at maximizeyourvocals.com.",
+        pictureSrc: null,
+        pictureAlt: "The logo for Maximize Your Vocals"
     }
 ]
 

@@ -27,11 +27,11 @@ const LINK_DATA: LinkData[] = [
 ]
 
 export default function Links() {
-    return <section className="lg:w-1/2 mx-auto p-4">
+    return <section className="lg:w-1/2 w-5/6 mx-auto p-4">
         {LINK_DATA.map(data => {
             return <div key={data.link} className="p-4 rounded-sm border-4 border-gray-500 hover:text-emerald-900 text-2xl bg-gradient-to-b hover:from-lime-200 hover:to-green-400 from-cyan-200 to-sky-300 border-collapse">
-                <a href={data.link} key={data.label}>
-                        <h2>{`${data.label}:`}</h2><p>{data.link}</p>
+                <a href={data.link} key={data.label} className="flex flex-wrap justify-between">
+                        <div className="break-all"><h2>{`${data.label}:`}</h2><p>{data.link}</p></div>
                     {data.iconSrc && 
                         <Image className="" src={data.iconSrc} alt={data.iconAlt ?? "No alt provided. Please inform the website's owner."}/>}
                 </a>
